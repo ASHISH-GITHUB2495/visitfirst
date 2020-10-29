@@ -13,7 +13,7 @@ function GetWheather(props){
     const pressure = weather.main.pressure;
     const humidity = weather.main.humidity;
     const windSpeed = weather.wind.speed;
-    const icon_url = "http://openweathermap.org/img/wn/"+icon+"@2x.png";
+    const icon_url = "https://cors-anywhere.herokuapp.com/https://openweathermap.org/img/wn/"+icon+"@2x.png";
 
 
   return(

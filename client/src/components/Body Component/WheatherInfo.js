@@ -14,7 +14,7 @@ function WheatherInfo(){
  
       async function fetchData2(props) {
         
-        const res = await fetch("http://api.openweathermap.org/data/2.5/weather?q="+props+"&appid=9b87c818e06372c17e8220f40bad62d7&units=metric");
+        const res = await fetch("https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q="+props+"&appid=9b87c818e06372c17e8220f40bad62d7&units=metric");
         res
           .json()
           .then((res) => {

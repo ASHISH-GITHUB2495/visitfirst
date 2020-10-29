@@ -11,7 +11,7 @@ function Headlines(){
   
     useEffect(() => {
       async function fetchData() {
-        const res = await fetch("http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=3dc31574c05348d498ecf68edcf05115");
+        const res = await fetch("https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=3dc31574c05348d498ecf68edcf05115");
         res
           .json()
           .then((res) => {
@@ -23,7 +23,7 @@ function Headlines(){
           
         });
 
-        const res2 = await fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=3dc31574c05348d498ecf68edcf05115");
+        const res2 = await fetch("https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=in&apiKey=3dc31574c05348d498ecf68edcf05115");
         res2
         .json()
         .then((res2) => {
