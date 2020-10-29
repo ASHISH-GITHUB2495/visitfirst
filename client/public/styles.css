@@ -1,0 +1,250 @@
+body{
+  background-image: url('https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif');
+  background-size: cover;
+  
+  
+  
+  height: 100vh;
+  padding:0;
+  margin:0;
+}
+
+
+
+
+
+
+.bgVideo{
+position: fixed;
+right: 0;
+bottom: 0;
+width: auto;
+min-width: 100%;
+height: auto;
+min-height: 100%;
+z-index: -100;    
+background-size: cover;
+pointer-events: none;
+}
+#header{
+    background-image: radial-gradient(purple,cyan);
+    border-radius: 25px;
+    position: relative;
+    opacity: 0.8;
+    
+
+    
+}
+#header-container{
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+#header-logo{
+    
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  opacity: 100%;
+  z-index: 1;
+  
+}
+#header-button{
+     position: relative;
+     border-radius: 25px;
+    top: 30px;
+    margin: 5px;
+    color:white;
+    background-image: linear-gradient(white, black);
+     
+  
+}
+#header-text{
+    position: relative;
+    display: inline;
+    font-size: 100px;
+    margin-left: 20%;
+    margin-right: 15%;
+    font-family: 'Berkshire Swash', cursive;
+    margin-bottom: 0;
+    top:20px
+
+      
+}
+
+
+/* {-----------------------container of healines.................} */
+
+
+.headlines{
+    background-color: white;
+    color: black;
+   
+   
+}
+
+
+.Headlines-label{
+    background-color: black;
+    color:white;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0.5rem; 
+    border-radius: 20px;
+    border-color:white;
+    border-style: solid;
+}
+.HeadlinesCon{
+    margin-left: 2rem;
+    margin-right: 2rem;
+   
+
+}
+.Headline-container{
+    margin: 0rem;
+    
+}
+
+
+
+
+    /*----------------------HEADLINES MARQUEE BY CSS --------------------------------*/
+   /* OUTER CONTAINER */
+.tcontainer {
+    width: 100%;
+    overflow: hidden; /* Hide scroll bar */
+    padding: 0%;
+    
+  }
+   
+  /* MIDDLE CONTAINER */
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%; /* Push contents to right side of screen */
+    background-color: #eee;
+    margin: 0%;
+    border-radius: 20px;
+    border-color:black;
+    border-style: solid;
+  }
+  
+  /* INNER CONTAINER */
+  @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .ticker-move {
+    /* Basically move items from right side of screen to left in infinite loop */
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 90s;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused; /* Pause scroll on mouse hover */
+  }
+  
+  /* ITEMS */
+  .ticker-item{
+    display: inline-block; /* Lay items in a horizontal line */
+    padding: 0 2rem;
+    
+  }
+  /* --------------------------------------------------------------------------------------- */
+  
+/* ///////////// */
+.body-plate{
+    margin: 10px;
+    padding: 5%;
+    padding-top: 1%;
+    position: relative;
+   
+  
+  }
+  .first{
+      position: fixed;
+      background-color: white;
+      margin: 0.5%;
+      border-radius: 25px;
+      width: fit-content;
+      background-image: radial-gradient(purple, rgb(165, 91, 235));
+      height:100%;
+      position: fixed;
+      
+  
+  
+  }
+  .second{
+  
+      background-image: radial-gradient(purple,cyan);
+      margin: 0.5%;
+      height: 100%;
+      
+     
+  
+  }
+  .third{
+  
+      background-color: white;
+      margin: 0.5%;
+      height: 100%;
+      border-radius: 25px;
+      background-image: linear-gradient(purple, rgb(165, 91, 235));
+      
+      position: fixed;
+  
+  }
+  
+  
+  /* ................weather style//////////// */
+
+  .weatherIcon
+  {
+    display:"inline-block";
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    z-index: 1;
+  
+  } 
+    
+ .weatherSearch{
+   margin-top: 5%;
+ }
+    
+  /* .......................Job search portal */
+
+  .jobPost{
+    background-image:  linear-gradient(rgb(189, 109, 185), rgb(235, 91, 180));
+    background-size: cover;
+    text-align: center;
+  }
+
+  /* ...........................News search .............. */
+  .news-search{
+     
+     text-align: center;
+
+  }
+  .news-button{
+    padding: 1%;
+     margin-left: 5%;
+     margin-right: 5%;
+     margin-bottom: 1%;
+     border-radius: 10px;
+    border-color: orange;
+  
+  }
+  .TopHeadlineContent{
+    background-color: white;
+    position: relative;
+    
+  }
