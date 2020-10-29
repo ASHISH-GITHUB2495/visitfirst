@@ -1,10 +1,6 @@
-import { json, urlencoded } from "body-parser";
 import React,{useEffect}from "react";
 
 function GetWheather(props){
-    
-   
-
     const weather=props.data;
     const cod = weather.cod;
    const location =weather.name;

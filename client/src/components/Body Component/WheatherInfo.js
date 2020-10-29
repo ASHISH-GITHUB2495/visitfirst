@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import GetWheather from "./GetWheather";
-//import GetWheather from "./GetWheather";
+
 
 
 function WheatherInfo(){
