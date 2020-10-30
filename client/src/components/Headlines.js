@@ -11,7 +11,7 @@ function Headlines(){
   
     useEffect(() => {
       async function fetchData() {
-        const res = await fetch("/api2");
+        const res = await fetch("/api1");
         res
           .json()
           .then((res) => {
