@@ -1,15 +1,25 @@
 import React from "react";
-import logo from "./media/logo.png";
+import logo from "./logo.png";
+
 
 function Header()
 {
     return(
  <div id="header-container">
- <div id="header">
-    <img src={logo} id="header-logo"/> 
-  <h1 id="header-text" style={{color:"white"}}>visit First</h1>
+ <div id="header" class="row">
+    <div  id="header-logo" class="col-2"> 
+       <img src={logo} id="header-img" />
+     </div>
+  <div id="header-text"  class="col-6">
+        <h1 style={{color:"white",fontFamily: "'Berkshire Swash', cursive",fontSize:"8em",position:"absolute",right:0}}  >visitFirst</h1>
+  </div>
+  <div class="col-2 "  >
   <button id="header-button">About website</button>
-  <button id="header-button">About Developer</button>
+  </div>
+  <div class="col-2">
+  <button id="header-button" style={{bottom:"10%" ,left:"2%"}}>About Developer</button>
+  </div>
+
 </div>
 </div>
     )

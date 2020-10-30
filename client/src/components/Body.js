@@ -8,15 +8,16 @@ function Header()
     return(
  <div class="body-plate">
    <div class="row ">
-       <div class="col first">
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg first ">
            <WheatherInfo />
 
        </div>
 
-       <div class="col-6 second">
+       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 second">
            <News />
        </div>
-       <div class="col third">
+       
+       <div class="col-xs-5 col-sm-5 col-md-5 col-lg third ">
          <JobPortal />
         </div>
     

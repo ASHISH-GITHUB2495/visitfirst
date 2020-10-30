@@ -57,7 +57,7 @@ return (
     
     <div class="row Headline-container">
          <div class="col-2 Headlines-label">
-          International Headlines
+           International Headlines
          </div>
          <div class="col-10 tcontainer">
          
