@@ -22,7 +22,7 @@ app.get('/api1',(req,res)=>{
             .json()
             .then((response) => {
              res.send(response);
-             console.log(page);
+     
           });
         }
         fetchData();
@@ -107,6 +107,37 @@ app.get("/api4",(req,res) =>{
       
     });
   
+
+    app.get("/api6",(req,res) =>{
+
+
+        async function fetchData() {
+        
+          const response = await fetch("https://remotive.io/api/remote-jobs/categories");
+          response
+            .json()
+            .then((response) => {
+             res.send(response);
+          });
+        }
+        fetchData();
+        
+      });
+      app.get("/api7",(req,res) =>{
+
+    let category = req.query.category;
+        async function fetchData() {
+          const response = await fetch("https://remotive.io/api/remote-jobs?category="+category+"&limit=15");
+          response
+            .json()
+            .then((response) => {
+             res.send(response);
+          });
+        }
+        fetchData();
+        
+      });
+    
 
 
 

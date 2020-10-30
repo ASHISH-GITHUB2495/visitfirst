@@ -15,24 +15,24 @@ function Headlines(){
         res
           .json()
           .then((res) => {
-             
+             if(res.status !== "error"){
             for(var i=0;i<10;i++)
               {  
                   update(prevValue => [...prevValue,res.articles[i].title]);
               }
-          
+          }
         });
 
         const res2 = await fetch("/api2");
         res2
         .json()
         .then((res2) => {
-           
+           if(res2.status !== "error"){
           for(var i=0;i<10;i++)
             {  
                 update2(prevValue => [...prevValue,res2.articles[i].title]);
             }
-        
+        }
       });
 
        
