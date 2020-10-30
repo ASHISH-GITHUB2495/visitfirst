@@ -23,7 +23,7 @@ function Headlines(){
           
         });
 
-        const res2 = await fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=3dc31574c05348d498ecf68edcf05115");
+        const res2 = await fetch("/api2");
         res2
         .json()
         .then((res2) => {
