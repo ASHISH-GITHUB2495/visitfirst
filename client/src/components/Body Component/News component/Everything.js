@@ -44,7 +44,7 @@ function Everything(){
      
     async function fetchData2(props) {
        
-         const res = await fetch("https://newsapi.org/v2/everything?q="+word+"&from="+from+"&to="+to+"&sortBy="+sort+"&pageSize="+pageCount+"&apiKey=3dc31574c05348d498ecf68edcf05115");
+         const res = await fetch("/api4/?word="+word+"&from="+from+"&to="+to+"&sortBy="+sort+"&pageSize="+pageCount);
          res
            .json()
            .then((res) => {

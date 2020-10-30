@@ -47,7 +47,7 @@ function TopHeadlines(){
       
     async function fetchData2(props) {
        
-         const res = await fetch("https://newsapi.org/v2/top-headlines?country="+country+"&q="+word+"&category="+category+"&pageSize="+pageCount+"&apiKey=3dc31574c05348d498ecf68edcf05115");
+         const res = await fetch("/api3/?country="+country+"&word="+word+"&category="+category+"&pageCount="+pageCount);
          res
            .json()
            .then((res) => {
