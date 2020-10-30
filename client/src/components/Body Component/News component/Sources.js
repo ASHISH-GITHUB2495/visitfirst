@@ -36,7 +36,7 @@ function Sources(){
      
     async function fetchData2(props) {
        
-         const res = await fetch("https://newsapi.org/v2/sources?language="+language+"&country="+country+"&category="+category+"&apiKey=3dc31574c05348d498ecf68edcf05115");
+         const res = await fetch("/api5/?language="+language+"&country="+country+"&category="+category);
          res
            .json()
            .then((res) => {

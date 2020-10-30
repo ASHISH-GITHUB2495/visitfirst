@@ -88,6 +88,25 @@ app.get("/api4",(req,res) =>{
     
   });
 
+  app.get("/api5",(req,res) =>{
+
+    let language = req.query.language;
+    let country = req.query.country;
+    let category= req.query.category;
+    
+      async function fetchData() {
+      
+        const response = await fetch("https://newsapi.org/v2/sources?language="+language+"&country="+country+"&category="+category+"&apiKey=3dc31574c05348d498ecf68edcf05115");
+        response
+          .json()
+          .then((response) => {
+           res.send(response);
+        });
+      }
+      fetchData();
+      
+    });
+  
 
 
 
