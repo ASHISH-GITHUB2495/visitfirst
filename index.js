@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const fetch = require('node-fetch');
 
 
 const app = express();
@@ -147,6 +148,13 @@ const news = {
 app.get('/api2',(req,res)=>{
 
   res.send(news);
+
+  fetch('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=3dc31574c05348d498ecf68edcf05115')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+  })
+  .catch(err => console.log(err));
 
 });
 

@@ -11,7 +11,7 @@ function JobPortal(){
     
     async function fetchData2(props) {
         
-        const res = await fetch("https://remotive.io/api/remote-jobs?category="+props+"&limit=15");
+        const res = await fetch("https://cors-anywhere.herokuapp.com/https://remotive.io/api/remote-jobs?category="+props+"&limit=15");
         res
           .json()
           .then((res) => {
