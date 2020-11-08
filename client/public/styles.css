@@ -1,9 +1,6 @@
 body{
   background-image: url('https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif');
   background-size: cover;
-  
-  
-  
   height: 100vh;
   padding:0;
   margin:0;
@@ -63,9 +60,13 @@ text-align: center;
 #header-button{
    position: absolute;
    right: 0;
-   bottom: 10%;
-      
-     
+   bottom: 0%;
+   width: 60%;
+   height: auto;
+    padding: 2%;
+    padding-left: 0;
+    padding-right: 0;
+     font-size: 0.8rem;
      border-radius: 2rem;
     color:white;
     background-image: linear-gradient(white, black);
