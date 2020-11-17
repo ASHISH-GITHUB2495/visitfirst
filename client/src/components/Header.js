@@ -14,7 +14,7 @@ function Header()
         <h1 style={{color:"white",fontFamily: "'Berkshire Swash', cursive",fontSize:"8em",position:"absolute",right:0}}  >visitFirst</h1>
   </div>
   <div class="col-2 "  >
-  <a id="header-button"  class="btn" style={{bottom:"5%" ,right:"2%"}} href="https://ashish-github2495.github.io/MyPortfolio.github.io/"  target="_blank" >About Developer</a>
+  <a id="header-button"  class="btn" style={{bottom:"5%" ,right:"2%"}} href="https://github.com/ASHISH-GITHUB2495/visitfirst"  target="_blank" >See on Github</a>
   </div>
   <div class="col-2">
   {/* "<button id="header-button" style={{bottom:"10%" ,left:"2%"}}>About Developer</button>" */}
