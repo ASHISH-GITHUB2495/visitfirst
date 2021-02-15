@@ -27,7 +27,7 @@ function JobPortal(){
    
     useEffect(() => {
         async function fetchData() {
-          const res = await fetch(" https://cors-anywhere.herokuapp.com/https://remotive.io/api/remote-jobs/categories");
+          const res = await fetch("/api6");
           res
             .json()
             .then((res) => {
