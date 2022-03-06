@@ -3,30 +3,30 @@ import NewsChose from "./News component/NewsChose"
 
 
 function News(){
-     const [cos1,update1] = React.useState({color:"orange",backgroundColor:"white"});
-     const [cos2,update2] = React.useState({color:"orange",backgroundColor:"white"});
-     const [cos3,update3] = React.useState({color:"orange",backgroundColor:"white"});
+     const [cos1,update1] = React.useState({color:"rgb(61, 0, 0)",fontWeight:"900",backgroundColor:"white"});
+     const [cos2,update2] = React.useState({color:"rgb(61, 0, 0)",fontWeight:"900",backgroundColor:"white"});
+     const [cos3,update3] = React.useState({color:"rgb(61, 0, 0)",fontWeight:"900",backgroundColor:"white"});
   
 
        const [chosen,updateChosen] = React.useState(0);
 
 
     function click1(){
-          update1({color:"white",backgroundColor:"orange" });
-          update2({color:"orange",backgroundColor:"white"});
-          update3({color:"orange",backgroundColor:"white"});
+          update1({color:"white",backgroundColor:"rgb(61, 0, 0)",fontWeight:"900" });
+          update2({color:"rgb(61, 0, 0)",fontWeight:"900",backgroundColor:"white"});
+          update3({color:"rgb(61, 0, 0)",fontWeight:"900",backgroundColor:"white"});
           updateChosen(1);
     }
     function click2(){
-     update2({color:"white",backgroundColor:"orange" });
-     update1({color:"orange",backgroundColor:"white"});
-     update3({color:"orange",backgroundColor:"white"});
+     update2({color:"white",backgroundColor:"rgb(61, 0, 0)",fontWeight:"900" });
+     update1({color:"rgb(61, 0, 0)",fontWeight:"900",backgroundColor:"white"});
+     update3({color:"rgb(61, 0, 0)",fontWeight:"900",backgroundColor:"white"});
      updateChosen(2);
     }
     function click3(){
-     update3({color:"white",backgroundColor:"orange" });
-     update2({color:"orange",backgroundColor:"white"});
-     update1({color:"orange",backgroundColor:"white"});
+     update3({color:"white",backgroundColor:"rgb(61, 0, 0)",fontWeight:"900" });
+     update2({color:"rgb(61, 0, 0)",fontWeight:"900",backgroundColor:"white"});
+     update1({color:"rgb(61, 0, 0)",fontWeight:"900",backgroundColor:"white"});
      updateChosen(3);
     }
 

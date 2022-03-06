@@ -34,7 +34,9 @@ async function fetchData() {
         response
           .json()
           .then((response) => {
+    
            res.send(response);
+        
         });
       }
       fetchData();

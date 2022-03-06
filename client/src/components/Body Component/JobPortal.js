@@ -57,9 +57,9 @@ function JobPortal(){
        
         <h4 style={{color:"white",border:""}}>{job.company_name}</h4>
          <p style={{color:"white",fontStyle:"italic"}}>{job.candidate_required_location}</p>
-          <h5 style={{color:"sky blue"}} > {job.title}</h5>
-        <p>Type: {job.job_type}</p>
-        <p>Published On: {job.publication_date}</p>
+          <h5 style={{color:"white",border:""}} > {job.title}</h5>
+        <p style={{color:"white",border:""}}>Type: {job.job_type}</p>
+        <p style={{color:"white",border:""}}>Published On: {job.publication_date}</p>
         {/* <form action={job.url}>
          <input type="submit" value="Apply Now!!!" />
         </form> */}

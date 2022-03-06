@@ -163,8 +163,8 @@ return <div class="news-search">
            <h1>wrong query ...</h1>
            :
            (arrive === false) ?
-       <h1> ...Search Sources...</h1> :
-        <h1> ...getting results... </h1>
+       <h1 style={{color:"cyan"}}> ...Search Sources...</h1> :
+        <h1 style={{color:"cyan"}}> ...getting results... </h1>
      }
 
 </div>;

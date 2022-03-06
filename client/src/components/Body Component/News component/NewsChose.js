@@ -12,7 +12,7 @@ function NewsChose(props){
     else  if(props.chosen===3)
         return  <Sources />;
     else
-        return <h1> Select Please</h1>;
+        return <h1 style={{color:"cyan"}}> Select Please</h1>;
 
 
 }

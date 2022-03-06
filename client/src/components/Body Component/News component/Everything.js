@@ -101,11 +101,11 @@ return <div class="news-search">
          
     { (allow === true) ?
          (status === "ok") ? data.map(createNews) :
-           <h1>wrong query ... must specify Keyword</h1>
+           <h1  style={{color:"cyan"}}>wrong query ... must specify Keyword</h1>
            :
            (arrive === false) ?
-       <h1> ...Search News...</h1> :
-        <h1> ...getting results... </h1>
+       <h1  style={{color:"cyan"}}> ...Search News...</h1> :
+        <h1  style={{color:"cyan"}}> ...getting results... </h1>
      }
 
   </div>;

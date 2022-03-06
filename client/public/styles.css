@@ -1,16 +1,13 @@
 body{
-  background-image: url('https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif');
+  background-image: url('/images/news.jpg');
   background-size: cover;
   height: 100vh;
   padding:0;
-  margin:0;
+  margin:8px;
 }
 
 #header-container{
-    padding-top: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 1%;
+  
     position: relative;
 
     
@@ -18,15 +15,10 @@ body{
 
 
 #header{
-    background-image: radial-gradient(purple,cyan);
-    border-radius: 2rem;
+    background-image: radial-gradient(rgb(0, 0, 0),rgb(61, 0, 0));
     position: relative;
-    opacity: 0.8;
-   
+    opacity: 90%;
 
-    
-
-    
 }
 
 
@@ -57,19 +49,18 @@ text-align: center;
 .button-container{
   position: relative;
 }
-#header-button{
-   position: absolute;
+.header-button{
+  
    right: 0;
-   bottom: 0%;
-   width: 60%;
+
+   text-align: center;
+   vertical-align:text-bottom;
    height: auto;
-    padding: 2%;
-    padding-left: 0;
-    padding-right: 0;
-     font-size: 0.8rem;
-     border-radius: 2rem;
-    color:white;
-    background-image: linear-gradient(white, black);
+   width: auto;
+    
+    margin-top: 6em;
+
+   
 }
 
 
@@ -89,19 +80,12 @@ text-align: center;
     color:white;
     font-size: 1.3em;
     text-align: center;
-    padding: 0.5em; 
-    border-radius: 1.3em;
-    border-color:white;
     border-style: solid;
+    margin: 0;
 }
-.HeadlinesCon{
-    margin-left: 2rem;
-    margin-right: 2rem;
-   
 
-}
 .Headline-container{
-    margin: 0rem;
+    margin: 0px;
     
 }
 
@@ -116,14 +100,17 @@ text-align: center;
     padding: 0%;
     
   }
-   
+  .col-10 tcontainer{
+    padding-left: 0px;
+    margin-left: 0%;
+  }
   /* MIDDLE CONTAINER */
   .ticker-wrap {
     width: 100%;
     padding-left: 100%; /* Push contents to right side of screen */
     background-color: #eee;
     margin: 0%;
-    border-radius: 20px;
+  
     border-color:black;
     border-style: solid;
   }
@@ -153,7 +140,7 @@ text-align: center;
   /* ITEMS */
   .ticker-item{
     display: inline-block; /* Lay items in a horizontal line */
-    padding: 0 2rem;
+   
     
   }
   /* --------------------------------------------------------------------------------------- */
@@ -169,34 +156,39 @@ text-align: center;
   }
   .first{
       position: fixed;
-      background-color: white;
+      background-color: rgb(26, 5, 5);
       margin: 0.5%;
       border-radius: 25px;
+      border-top-right-radius: 0%;
+      border-bottom-right-radius: 0%;
       width: fit-content;
-      background-image: radial-gradient(purple, rgb(165, 91, 235));
+      background-image: radial-gradient(rgb(26, 2, 2),rgb(20, 17, 20));
       height:100%;
       position: fixed;
-      
+      opacity: 90%;
+      color: black;
   
   
   }
   .second{
   
-      background-image: radial-gradient(purple,cyan);
+      background-image: radial-gradient(rgb(26, 2, 2),rgb(20, 17, 20));
       margin: 0.5%;
       height: 100%;
       
-     
+      opacity: 90%;
   
   }
   .third{
   
-      background-color: white;
+      background-color: rgb(26, 5, 5);
       margin: 0.5%;
       height: 100%;
       border-radius: 25px;
-      background-image: linear-gradient(purple, rgb(165, 91, 235));
-      
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%;
+      background-image: linear-gradient(rgb(26, 2, 2),rgb(20, 17, 20));
+      opacity: 90%;
       position: fixed;
   
   }
@@ -221,7 +213,7 @@ text-align: center;
   /* .......................Job search portal */
 
   .jobPost{
-    background-image:  linear-gradient(rgb(189, 109, 185), rgb(235, 91, 180));
+   background-color: rgb(61, 0, 0);
     background-size: cover;
     text-align: center;
   }

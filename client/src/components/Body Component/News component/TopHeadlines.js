@@ -171,8 +171,8 @@ function TopHeadlines(){
            <h1>wrong query</h1>
            :
            (arrive === false) ?
-       <h1> ...Search News...</h1> :
-        <h1> ...getting results...</h1>
+       <h1 style={{color:"cyan"}}> ...Search News...</h1> :
+        <h1 style={{color:"cyan"}}> ...getting results...</h1>
      }
 
       
