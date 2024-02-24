@@ -1,0 +1,240 @@
+body{
+  background-image: url('/images/news.jpg');
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:8px;
+}
+
+#header-container{
+  
+    position: relative;
+
+    
+}
+
+
+#header{
+    background-image: radial-gradient(rgb(0, 0, 0),rgb(61, 0, 0));
+    position: relative;
+    opacity: 90%;
+
+}
+
+
+#header-logo{
+   
+  opacity: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+  text-align: center;
+
+  
+}
+#header-img{
+    height: auto; width: auto;
+    
+}
+
+#header-text{
+   
+text-align: center;
+
+
+      
+}
+
+.button-container{
+  position: relative;
+}
+.header-button{
+  
+   right: 0;
+
+   text-align: center;
+   vertical-align:text-bottom;
+   height: auto;
+   width: auto;
+    
+    margin-top: 6em;
+
+   
+}
+
+
+/* {-----------------------container of healines.................} */
+
+
+.headlines{
+    background-color: white;
+    color: black;
+   
+   
+}
+
+
+.Headlines-label{
+    background-color: black;
+    color:white;
+    font-size: 1.3em;
+    text-align: center;
+    border-style: solid;
+    margin: 0;
+}
+
+.Headline-container{
+    margin: 0px;
+    
+}
+
+
+
+
+    /*----------------------HEADLINES MARQUEE BY CSS --------------------------------*/
+   /* OUTER CONTAINER */
+.tcontainer {
+    width: 100%;
+    overflow: hidden; /* Hide scroll bar */
+    padding: 0%;
+    
+  }
+  .col-10 tcontainer{
+    padding-left: 0px;
+    margin-left: 0%;
+  }
+  /* MIDDLE CONTAINER */
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%; /* Push contents to right side of screen */
+    background-color: #eee;
+    margin: 0%;
+  
+    border-color:black;
+    border-style: solid;
+  }
+  
+  /* INNER CONTAINER */
+  @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .ticker-move {
+    /* Basically move items from right side of screen to left in infinite loop */
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 90s;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused; /* Pause scroll on mouse hover */
+  }
+  
+  /* ITEMS */
+  .ticker-item{
+    display: inline-block; /* Lay items in a horizontal line */
+   
+    
+  }
+  /* --------------------------------------------------------------------------------------- */
+  
+/* ///////////// */
+.body-plate{
+    margin: 10px;
+    padding: 5%;
+    padding-top: 1%;
+    position: relative;
+   
+  
+  }
+  .first{
+      position: fixed;
+      background-color: rgb(26, 5, 5);
+      margin: 0.5%;
+      border-radius: 25px;
+      border-top-right-radius: 0%;
+      border-bottom-right-radius: 0%;
+      width: fit-content;
+      background-image: radial-gradient(rgb(26, 2, 2),rgb(20, 17, 20));
+      height:100%;
+      position: fixed;
+      opacity: 90%;
+      color: black;
+  
+  
+  }
+  .second{
+  
+      background-image: radial-gradient(rgb(26, 2, 2),rgb(20, 17, 20));
+      margin: 0.5%;
+      height: 100%;
+      
+      opacity: 90%;
+  
+  }
+  .third{
+  
+      background-color: rgb(26, 5, 5);
+      margin: 0.5%;
+      height: 100%;
+      border-radius: 25px;
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%;
+      background-image: linear-gradient(rgb(26, 2, 2),rgb(20, 17, 20));
+      opacity: 90%;
+      position: fixed;
+  
+  }
+  
+  
+  /* ................weather style//////////// */
+
+  .weatherIcon
+  {
+    display:"inline-block";
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    z-index: 1;
+  
+  } 
+    
+ .weatherSearch{
+   margin-top: 5%;
+ }
+    
+  /* .......................Job search portal */
+
+  .jobPost{
+   background-color: rgb(61, 0, 0);
+    background-size: cover;
+    text-align: center;
+  }
+
+  /* ...........................News search .............. */
+  .news-search{
+     
+     text-align: center;
+
+  }
+  .news-button{
+    padding: 1%;
+     margin-left: 5%;
+     margin-right: 5%;
+     margin-bottom: 1%;
+     border-radius: 10px;
+    border-color: orange;
+  
+  }
+  .TopHeadlineContent{
+    background-color: white;
+    position: relative;
+    
+  }
